@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> African Cuisine App| Starters|Vetkoek</title>
+        <link rel="stylesheet"href="style.css">
+        <link rel="stylesheet"href="fontAwesome.css/all.css">
+
+
+    </head>
+    <body class="body-recipes">
+        <div id class="header">
+            <a href="main-meals.html">
+            <i class="fas-fa-arrow-left"></i>
+            </a>
+            <img src="images/logo-text.png">
+        </div>
+        <div id="recipe">
+            <div class="recipe-details">
+                <img src="images/vetkoek.jfif">
+                <h1>Koek sisters</h1>
+                <div class="recipe-details-info">
+                    <p><b>Prep time:</b> 25 minuts</p>
+                    <p style="float: right"><b>Price </b>R30</p>
+                </div>
+                <div class="recipe-details-ingredients">
+                    <h2>Ingredients</h2>
+                </div>
+
+            </div>
+            <input id="check-01"type="checkbox">
+            <label for="check-01">1 kg Flour </label>
+            <br>
+            <input id="check-02"type="checkbox">
+            <label for="check-02">1 tsp salt </label>
+            <br>
+            <input id="check-03"type="checkbox">
+            <label for="check-03">cinnamon</label>
+            <br>
+            <input id="check-04"type="checkbox">
+            <label for="check-04"> 1 tsp garlic crushed</label>
+            <br>
+            <input id="check-05"type="checkbox">
+            <label for="check-05">5 cups of sugar </label>
+            <br>
+            <input id="check-06"type="checkbox">
+            <label for="check-06"> Yeast</label>
+            <br>
+
+            <input id="check-07"type="checkbox">
+            <label for="check-07">10 ml vegetable oil</label>
+            <br>
+            <input id="check-08"type="checkbox">
+            <label for="check-08">750 ml oil to fry Koeksister</label>
+            <br>
+            
+            
+
+            
+            
+
+            
+
+            
+
+
+            
+        </div>
+        <div class="recipe-details-steps">
+            <H2>Things you can add</H2>
+            <ol>
+                <li>Extra Syrup: R40</li>
+                <li>Custard:R20</li>
+                <li>Pineapple Slice: R10</li>
+
+            
+
+        </div>
+        <p> Please Make Your Booking Here And Special Requests</p>
+            <form>
+                <label for="usernameInput">Special Order Request</label><input type="text"id= "usernameInput"/><br/> 
+                <label for="passwordInput">Phone Number</label><input type="password" id="passwordInput"/>
+                <p id="message"></p>
+                <br/><br/>
+                <a href ="#" onclick="verifyUser()">S U B M I T</a>
+
+
+            </form>
+            <script>
+                    function verifyUser(){
+                        var username=document.getElementById("usernameInput").value;
+                        var password=document.getElementById("passwordInput").value;
+
+                        checkUserCreds(username,password);
+                    }
+                    function checkUserCreds(username,password){
+                        var systemUsername="Anything";
+                        var systemPassword="0652112629";
+                    
+                        
+                        if(username==systemUsername && password==systemPassword){
+                            document.getElementById("message").innerHTML="Correct.Logging you in ...";
+                        } else {
+                            document.getElementById("message").innerHTML="username or password are incorrect";
+                        }
+                    }
+
+                       
+
+
+
+
+            </script>
+
+
+    </body>
+</html>
+
+

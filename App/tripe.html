@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> African Cuisine App| Starters|Vetkoek</title>
+        <link rel="stylesheet"href="style.css">
+        <link rel="stylesheet"href="fontAwesome.css/all.css">
+
+
+    </head>
+    <body class="body-recipes">
+        <div id class="header">
+            <a href="main-meals.html">
+            <i class="fas-fa-arrow-left"></i>
+            </a>
+            <img src="images/logo.png">
+        </div>
+        <div id="recipe">
+            <div class="recipe-details">
+                <img src="images/jollof rice.jfif">
+                <h1> Tripe</h1>
+                <div class="recipe-details-info">
+                    
+                    <p style="float: right"><b>Price </b>250</p>
+                </div>
+                <div class="recipe-details-ingredients">
+                    <h2>Ingredients</h2>
+                </div>
+
+            </div>
+            <input id="check-01"type="checkbox">
+            <label for="check-01">Beef </label>
+            <br>
+            <input id="check-02"type="checkbox">
+            <label for="check-02">spices</label>
+            <br>
+            <input id="check-03"type="checkbox">
+            <label for="check-03">bell peppers</label>
+            <br>
+            <input id="check-04"type="checkbox">
+            <label for="check-04">chicken stock</label>
+            <br>
+            <input id="check-05"type="checkbox">
+            <label for="check-05">onions </label>
+            <br>
+            <input id="check-06"type="checkbox">
+            <label for="check-06">green beans</label>
+            <br>
+
+            <input id="check-07"type="checkbox">
+            <label for="check-07">tomato paste</label>
+            <br>
+            
+            
+            
+
+            
+            
+
+            
+
+            
+
+
+            
+        </div>
+        <div class="recipe-details-steps">
+            <H2>Things you can add</H2>
+            <ol>
+                <li>butternut:50</li>
+                <li>Rice:20</li>
+                <li>Spinach:R30</li>
+                <li>Greek Salad:R50</li>
+                
+
+            
+
+        </div>
+        <p> Please Make Your Booking Here And Special Requests</p>
+            <form>
+                <label for="usernameInput">Special Order Request</label><input type="text"id= "usernameInput"/><br/> 
+                <label for="passwordInput">Phone Number</label><input type="password" id="passwordInput"/>
+                <p id="message"></p>
+                <br/><br/>
+                <a href ="#" onclick="verifyUser()">S U B M I T</a>
+
+
+            </form>
+            <script>
+                    function verifyUser(){
+                        var username=document.getElementById("usernameInput").value;
+                        var password=document.getElementById("passwordInput").value;
+
+                        checkUserCreds(username,password);
+                    }
+                    function checkUserCreds(username,password){
+                        var systemUsername="Anything";
+                        var systemPassword="0652112629";
+                    
+                        
+                        if(username==systemUsername && password==systemPassword){
+                            document.getElementById("message").innerHTML="Correct.Logging you in ...";
+                        } else {
+                            document.getElementById("message").innerHTML="username or password are incorrect";
+                        }
+                    }
+
+                       
+
+
+
+
+            </script>
+
+
+    </body>
+</html>
+
+

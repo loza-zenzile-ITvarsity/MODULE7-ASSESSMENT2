@@ -1,0 +1,35 @@
+/* ----------------------------------Reponsive layout--------------------------------------------------------- */
+@media only screen and (min-width: 1000px) {
+
+}
+
+h1 {
+    color: blue;
+    font-size: 900%;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 900;
+}
+P{
+    font: fantasy;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-style: unset;
+    
+}
+body {
+    background-color: rgb(173, 230, 182);
+  }
+  
+  h1 {
+    color: white;
+    text-align: center;
+  }
+  p {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+        color: red;
+        
+  }
